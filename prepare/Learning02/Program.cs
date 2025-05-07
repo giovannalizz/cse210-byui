@@ -4,42 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("What is your grade percentage? ");
-        string answer = Console.ReadLine();
-        int percent = int.Parse(answer);
+       Job job1 = new Job();
+       job1._jobTitle = "Programmer";
+       job1._company = "Apple";
+       job1._startYear = 2020;
+       job1._endYear = 2022;
 
-        string letter = "";
-
-        if (percent >= 90)
-        {
-            letter = "A";
-        }
-        else if (percent >= 80)
-        {
-            letter = "B";
-        }
-        else if (percent >= 70)
-        {
-            letter = "C";
-        }
-        else if (percent >= 60)
-        {
-            letter = "D";
-        }
-        else
-        {
-            letter = "F";
-        }
-
-        Console.WriteLine($"Your grade is: {letter}");
-        
-        if (percent >= 70)
-        {
-            Console.WriteLine("You passed!");
-        }
-        else
-        {
-            Console.WriteLine("Better luck next time!");
-        }
+       Job job2 = new Job();
+       job2._jobTitle = "Project Manager";
+       job2._company = "Amazon";
+       job2._startYear = 2022;
+       job2._endYear = 2024;
     }
 }

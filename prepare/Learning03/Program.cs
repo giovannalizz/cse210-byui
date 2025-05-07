@@ -17,15 +17,15 @@ class Program
 
         while (guess != magicNumber)
         {
-            Console.Write("What is your guess" );
+            Console.Write("What is your guess: ");
             guess = int.Parse(Console.ReadLine());
 
-        if (magicNumber > guess)
+        if (magicNumber < guess)
         {
             Console.WriteLine("Too high");
 
         }
-        else if (magicNumber < guess)
+        else if (magicNumber > guess)
         {
             Console.WriteLine("Lower");
         }
@@ -35,9 +35,38 @@ class Program
         }
         }
 
+        // generating the avarage
+
+        List<int> numbers = new List<int>();
+
+        int userNumber = -1;
 
 
+        while (userNumber != 0)
+        {
+            Console.Write("Enter a list of numbers, type 0 when finished. ");
 
+            string userResponse = Console.ReadLine();
+            userNumber = int.Parse(userResponse);
+
+            if (userNumber != 0)
+            {
+                numbers.Add(userNumber);
+            }
+        }
+
+        int sum = 0;
+        foreach (int number in numbers)
+        {
+            sum += number;
+        }
+
+        Console.WriteLine($"The sum is: {sum}");
+
+
+        // avarage
+
+        float avarage = ((float)sum) / numbers.Count;
 
     }
 }
