@@ -1,10 +1,6 @@
 using System;
 
-/* Exceeding Requirements:
-   Improved save/load by using a CSV-friendly format
-   that can be opened in Excel. Quotes and delimiters are handled
-   in Journal.cs.
-*/
+
 
 class Program
 {
