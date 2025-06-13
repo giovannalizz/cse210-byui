@@ -1,0 +1,7 @@
+SimpleGoal|Read Scriptures|Read at least one verse every day|10|false
+SimpleGoal|Say Prayers|Pray morning and night|5|false
+EternalGoal|Smile More|Smile at others throughout the day|2
+EternalGoal|Be Kind|Say something kind every day|3
+ChecklistGoal|Exercise|Go for a 30-minute walk|5|2|5|20
+ChecklistGoal|Visit Family|Visit grandma|8|1|3|15
+ChecklistGoal|Do Home Teaching|Visit assigned families|10|0|4|30
